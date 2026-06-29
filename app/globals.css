@@ -130,3 +130,90 @@ footer .brand { color: white; }
 }
 
 .legalAlert { border: 1px solid rgba(217,129,98,.45); background: #fff4ee; color: #7b3e2e; border-radius: 14px; padding: 18px; line-height: 1.65; font-weight: 700; }
+
+/* Bouton WhatsApp clairement visible */
+.whatsappButton {
+  gap: 10px;
+  color: #ffffff;
+  background: #1fa855;
+  border: 1px solid #1fa855;
+  box-shadow: 0 12px 28px rgba(31, 168, 85, 0.28);
+}
+
+.whatsappButton:hover {
+  background: #178a46;
+  border-color: #178a46;
+  box-shadow: 0 16px 34px rgba(31, 168, 85, 0.35);
+}
+
+.whatsappIcon {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+}
+
+/* Véritable carte OpenStreetMap */
+.realMapCard {
+  overflow: hidden;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 0 24px 65px rgba(18, 48, 71, 0.1);
+}
+
+.interventionMap,
+.mapLoading {
+  width: 100%;
+  height: 470px;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.leafletMap {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.mapLoading {
+  display: grid;
+  place-items: center;
+  min-height: 470px;
+  padding: 30px;
+  color: var(--muted);
+  font-weight: 800;
+  text-align: center;
+  background: var(--sand);
+}
+
+.mapNote {
+  margin: 0;
+  padding: 18px 18px 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}
+
+@media (max-width: 620px) {
+  .interventionMap,
+  .mapLoading {
+    height: 360px;
+    min-height: 360px;
+  }
+
+  .realMapCard {
+    padding: 8px;
+    border-radius: 22px;
+  }
+
+  .mapNote {
+    padding: 16px 10px 8px;
+    font-size: 13px;
+  }
+}
